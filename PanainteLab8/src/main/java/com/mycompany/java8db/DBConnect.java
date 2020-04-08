@@ -25,18 +25,6 @@ public class DBConnect {
         }
     }
     
-    public void getData(){
-        try{
-            String query = "select * from persons";
-            rs = st.executeQuery(query);
-            System.out.println("Records from Database");
-            while(rs.next()){
-                String name = rs.getString("name");
-                String age = rs.getString("age");
-                System.out.println("Name: "+name+" Age:"+age);
-            }
-        }catch(Exception ex){
-            System.out.println(ex);
-        }
+    
     }
-}
+
